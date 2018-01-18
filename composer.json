@@ -1,0 +1,19 @@
+{
+    "name": "pulp-sass",
+    "version": "0.1.0",
+    "autoload": {
+        "psr-0": { "Pulp\\": "src/"}
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pulp-tool/pulp-cli.git"
+        }
+    ],
+    "require": {
+        "leafo/scssphp": "v0.7.4"
+    },
+    "require-dev": {
+        "pulp-tool/pulp-cli": "*"
+    }
+}
