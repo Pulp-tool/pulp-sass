@@ -1,6 +1,6 @@
 {
     "name": "pulp-sass",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "autoload": {
         "psr-0": { "Pulp\\": "src/"}
     },
