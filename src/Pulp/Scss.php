@@ -7,6 +7,7 @@ use Pulp\Fs\VirtualFile as vfile;
 class Scss extends DataPipe { 
 
 	public $parser;
+	public $extensionList = ['.scss', '.sass'];
 
 	public function __construct($opts) {
 		$this->parser = new \Leafo\ScssPhp\Compiler();
@@ -27,7 +28,7 @@ class Scss extends DataPipe {
 
 	protected function _onWrite($data) {
 		$cssFile = $data->getPathname();
-		$cssFile = str_replace('.less', '.css', $cssFile);
+		$cssFile = str_replace($this->extensionList, '.css', $cssFile);
 		$file = new vfile( $cssFile );
 
 		$file->setContents(
