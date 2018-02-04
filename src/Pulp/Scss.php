@@ -11,6 +11,7 @@ class Scss extends DataPipe {
 
 	public function __construct($opts) {
 		$this->parser = new \Leafo\ScssPhp\Compiler();
+		$importPathList = [];
 		if (array_key_exists('importPath', $opts)) {
 			$importPathList = $opts['importPath'];
 		}
