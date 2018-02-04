@@ -27,6 +27,10 @@ From your project's main folder
 composer require twbs/bootstrap:4.0.0
 ```
 
+Two Drivers
+===
+This plugin supports either the pure PHP SCSS Compiler from Leafo, or the standard compliant libsass with a PHP extension from absalomedia "sassphp".
+
 
 Use
 ===
